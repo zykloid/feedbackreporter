@@ -42,10 +42,14 @@
     return addresses;
 }
 
-
 - (NSString*) my_callStack
 {
-    NSArray *addresses = [self my_callStackReturnAddressesSkipping: 2 limit: 15];
+	if ([self respondsToSelector:@selector(callStackSymbols)]) {
+		NSArray *symbols = [(id)self callStackSymbols];
+		return [NSString stringWithFormat:@"%@\n",symbols];
+	}
+
+    NSArray *addresses = [self my_callStackReturnAddressesSkipping: EXCEPTION_STACK_SKIP limit: EXCEPTION_STACK_LIMIT];
 
     if (!addresses) {
         return nil;
@@ -65,11 +69,15 @@
         [args addObject:[NSString stringWithFormat:@"%p", [addr pointerValue]]];
     }
     
-    NSMutableString *output =[NSMutableString string];
+    NSMutableString *output = [NSMutableString string];
 
     FRCommand *cmd = [[FRCommand alloc] initWithPath:@"/usr/bin/atos"];
     [cmd setArgs:args];
     [cmd setOutput:output];
+    [cmd setError:output];
+
+    // execute returns -1 if command does not exist
+
     if([cmd execute] != 0) {
         [cmd release];
         return nil;

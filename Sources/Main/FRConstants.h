@@ -1,5 +1,5 @@
 /*
- * Copyright 2008, Torsten Curdt
+ * Copyright 2008-2010, Torsten Curdt
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,8 +35,9 @@
 //	Set the value of this key to 'YES' to present a checkbox where the user
 //	can switch on and off the sending of details information. If not specified,
 //	defaults to 'NO', hence no checkbox is shown.
-//	If the user checks off the 'send details' option, just the e-mail address
-//	and the comment are transmitted to the server. (optional)
+//	If the user checks off the 'send details' option, just the e-mail address,
+//	the comment, the type of report, and the application version are transmitted
+//  to the server. (optional)
 #define PLIST_KEY_SENDDETAILSISOPTIONAL @"FRFeedbackReporter.sendDetailsIsOptional"
 
 
@@ -47,14 +48,20 @@
 
 
 // POST fields filled by default
-#define POST_KEY_TYPE          @"type"
-#define POST_KEY_EMAIL         @"email"
-#define POST_KEY_VERSION       @"version"
-#define POST_KEY_MESSAGE       @"comment"
-#define POST_KEY_SYSTEM        @"system"
-#define POST_KEY_CONSOLE       @"console"
-#define POST_KEY_CRASHES       @"crashes"
-#define POST_KEY_SHELL         @"shell"
-#define POST_KEY_PREFERENCES   @"preferences"
-#define POST_KEY_EXCEPTION     @"exception"
+#define POST_KEY_TYPE           @"type"
+#define POST_KEY_EMAIL          @"email"
+#define POST_KEY_MESSAGE        @"comment"
+#define POST_KEY_SYSTEM         @"system"
+#define POST_KEY_CONSOLE        @"console"
+#define POST_KEY_CRASHES        @"crashes"
+#define POST_KEY_SHELL          @"shell"
+#define POST_KEY_PREFERENCES    @"preferences"
+#define POST_KEY_EXCEPTION      @"exception"
+#define POST_KEY_VERSION_LONG   @"version_long"		// Corresponds to CFBundleLongVersionString. Discouraged.
+#define POST_KEY_VERSION_SHORT  @"version_short"	// Corresponds to CFBundleShortVersionString.
+#define POST_KEY_VERSION_BUNDLE @"version_bundle"	// Corresponds to CFBundleVersion.
+#define POST_KEY_VERSION        @"version"			// A combination of the above 3.
 
+// Exception parsing
+#define EXCEPTION_STACK_SKIP    2
+#define EXCEPTION_STACK_LIMIT   100
