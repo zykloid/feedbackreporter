@@ -114,7 +114,7 @@
 
 - (NSString*) consoleLog
 {
-    NSNumber *hours = [[NSUserDefaults standardUserDefaults] valueForKey:PLIST_KEY_LOGHOURS];
+    NSNumber *hours = [[[NSBundle mainBundle] infoDictionary] valueForKey:PLIST_KEY_LOGHOURS];
 
     int h = 24;
 
@@ -318,6 +318,10 @@
     }
             
     NSString *target = [[FRApplication feedbackURL] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] ;
+    
+    if ([[[FRFeedbackReporter sharedReporter] delegate] respondsToSelector:@selector(targetUrlForFeedbackReport)]) {
+        target = [[[FRFeedbackReporter sharedReporter] delegate] targetUrlForFeedbackReport];
+    }
     
     if (target == nil) {
         NSLog(@"You are missing the %@ key in your Info.plist!", PLIST_KEY_TARGETURL);

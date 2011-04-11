@@ -1,5 +1,9 @@
 ## Version 1.3.1, unreleased
-
+* [ADD] Added Spanish translation. Thanks to Emilio Perez.
+* [ADD] Added targetUrlForFeedbackReport to delegate protocol. Thanks to Rick Fillion.
+* [FIX] Don't cache server response. Thanks to Rick Fillion.
+* [FIX] PLIST_KEY_LOGHOURS should come from the info plist. Thanks to Rico.
+* [CHG] Link against Foundation and 10.4 compatibility. Thanks to Linas Valiukas.
 
 ## Version 1.3.0, released 18.06.2010
 
