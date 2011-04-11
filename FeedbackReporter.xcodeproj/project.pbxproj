@@ -132,6 +132,8 @@
 		B9283C1212B0A6700015915E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FC369CB91100D505004C27F8 /* NSMutableDictionary+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableDictionary+Additions.h"; path = "Sources/Main/NSMutableDictionary+Additions.h"; sourceTree = "<group>"; };
 		FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+Additions.m"; path = "Sources/Main/NSMutableDictionary+Additions.m"; sourceTree = "<group>"; };
+		FC77C02713534913008BF910 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Resources/Japanese.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
+		FC77C02813534920008BF910 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Resources/Dutch.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -398,6 +400,7 @@
 				Armenian,
 				Italian,
 				Spanish,
+				Dutch,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* FeedbackReporter */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -520,6 +523,8 @@
 				9DC8130310BEE5E700748B92 /* Armenian */,
 				9D2174CD11CB5F63009ABBB5 /* French */,
 				9D279E4D130BEB6C00505390 /* Spanish */,
+				FC77C02713534913008BF910 /* Japanese */,
+				FC77C02813534920008BF910 /* Dutch */,
 			);
 			name = FeedbackReporter.strings;
 			sourceTree = "<group>";
