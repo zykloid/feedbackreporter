@@ -18,7 +18,7 @@
 
 @protocol FRUploaderDelegate;
 
-@interface FRUploader : NSObject {
+@interface FRUploader : NSObject <NSURLConnectionDelegate> {
 
 @private
     NSString *target;
