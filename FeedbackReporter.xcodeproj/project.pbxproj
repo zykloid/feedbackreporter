@@ -42,6 +42,7 @@
 		9DCF52AD0DEC0E4300EBF810 /* FRSystemProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DCF52AB0DEC0E4300EBF810 /* FRSystemProfile.m */; };
 		9DD4D9C30E4B934500B26451 /* FeedbackReporter.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DD4D9C20E4B934500B26451 /* FeedbackReporter.strings */; };
 		B9283C1312B0A6700015915E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9283C1212B0A6700015915E /* Foundation.framework */; };
+		FC045BC0148B9D240092512E /* FRConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5FB36B0E0B269900CF1BE0 /* FRConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC369CBB1100D505004C27F8 /* NSMutableDictionary+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC369CB91100D505004C27F8 /* NSMutableDictionary+Additions.h */; };
 		FC369CBC1100D505004C27F8 /* NSMutableDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */; };
 /* End PBXBuildFile section */
@@ -311,6 +312,7 @@
 			files = (
 				9DA7D6EF0DEB8E5D00C3B586 /* FRApplication.h in Headers */,
 				9DA7D6F10DEB8E5D00C3B586 /* FRCommand.h in Headers */,
+				FC045BC0148B9D240092512E /* FRConstants.h in Headers */,
 				9DA7D6F30DEB8E5D00C3B586 /* FRCrashLogFinder.h in Headers */,
 				9DA7D6F50DEB8E5D00C3B586 /* FRFeedbackController.h in Headers */,
 				9DA7D6F70DEB8E5D00C3B586 /* FRFeedbackReporter.h in Headers */,
@@ -388,7 +390,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0410;
+				LastUpgradeCheck = 0430;
 			};
 			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "FeedbackReporter" */;
 			compatibilityVersion = "Xcode 3.2";
