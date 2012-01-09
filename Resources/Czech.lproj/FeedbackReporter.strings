@@ -1,0 +1,68 @@
+/* Uncaught exception message */
+"%@ has encountered an exception!" = "V %@ byla zaznamenána neočekávaná chyba.";
+
+/* Message text for crash report */
+"%@ has recently crashed!" = "%@ byla právě neočekávaně ukončena.";
+
+/* */
+"anonymous" = "anonymní";
+
+/* */
+"Cancel" = "Zrušit";
+
+/* Comments text view label */
+"Comments:" = "Co jste dělal(a) těsně předtím, než k chybě došlo.";
+
+/* */
+"Console" = "Konzole";
+
+/* */
+"CrashLog" = "Log s chybami";
+
+/* */
+"Email address:" = "Vaše e-mailová adresa, pokud si přejete, abychom se s Vámi spojili.";
+
+/* */
+"Error: %@" = "Chyba: %@";
+
+/* */
+"Exception" = "Výjimka";
+
+/* Comment label text for feedback */
+"Feedback comment label" = "Vaše odezva: ";
+
+/* */
+"Feedback Host Not Reachable" = "Server pro odeslání odezvy není dostupný";
+
+/* Feedback message text */
+"Got a problem with %@?" = "Máte nápad, jak zlepšit %@?";
+
+/* */
+"OK" = "OK";
+
+/* */
+"Preferences" = "Nastavení";
+
+/* */
+"Proceed Anyway" = "Přesto pokračovat";
+
+/* */
+"Script" = "Skript";
+
+/* */
+"Send" = "Odeslat";
+
+/* Informative text for crash report */
+"Send crash report" = "Pomozte nám odstranit tento problém a odešlete report s popisem situace. Klikněte na detaily a prohlédněte si, jaké informace budou odeslány.";
+
+/* */
+"Send details" = "Odeslat detaily";
+
+/* Informative text for feedback */
+"Send feedback" = "Pomozte nám zlepšit náš software Vaší zpětnou vazbou! Klikněte na detaily a prohlédněte si, jaké informace budou odeslány.";
+
+/* */
+"Sorry, failed to submit your feedback to the server." = "Bohužel došlo k chybě při odesílání Vaší odezvy.";
+
+/* */
+"You may not be able to send feedback because %@ isn't reachable." = "Možná se Vám nepodaří odeslat odezvu protože %@ není dostupný.\n\nUjistěte se, že je dostupné síťové připojení před tím, než budete pokračovat.\n";

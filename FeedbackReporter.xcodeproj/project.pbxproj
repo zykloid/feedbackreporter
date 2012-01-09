@@ -135,6 +135,7 @@
 		FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+Additions.m"; path = "Sources/Main/NSMutableDictionary+Additions.m"; sourceTree = "<group>"; };
 		FC77C02713534913008BF910 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Resources/Japanese.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 		FC77C02813534920008BF910 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Resources/Dutch.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
+		FC8FA90D14BB4CBD00AF572D /* Czech */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Czech; path = Resources/Czech.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +407,7 @@
 				Italian,
 				Spanish,
 				Dutch,
+				Czech,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* FeedbackReporter */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -530,6 +532,7 @@
 				9D279E4D130BEB6C00505390 /* Spanish */,
 				FC77C02713534913008BF910 /* Japanese */,
 				FC77C02813534920008BF910 /* Dutch */,
+				FC8FA90D14BB4CBD00AF572D /* Czech */,
 			);
 			name = FeedbackReporter.strings;
 			sourceTree = "<group>";
