@@ -45,6 +45,7 @@
 		FC045BC0148B9D240092512E /* FRConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5FB36B0E0B269900CF1BE0 /* FRConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC369CBB1100D505004C27F8 /* NSMutableDictionary+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC369CB91100D505004C27F8 /* NSMutableDictionary+Additions.h */; };
 		FC369CBC1100D505004C27F8 /* NSMutableDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */; };
+		FC8E8EB1157CAA5B00B533B3 /* App.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB6351B0E4DD97A00C72888 /* App.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,7 +118,7 @@
 		9DB634E30E4DD64C00C72888 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB634E70E4DD64C00C72888 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/App/Info.plist; sourceTree = "<group>"; };
 		9DB634F60E4DD8C200C72888 /* FeedbackReporter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FeedbackReporter.xib; path = Resources/FeedbackReporter.xib; sourceTree = "<group>"; };
-		9DB6351B0E4DD97A00C72888 /* App.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = App.xib; path = Resources/App.xib; sourceTree = "<group>"; };
+		9DB6351B0E4DD97A00C72888 /* App.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = App.xib; path = Resources/App.xib; sourceTree = "<group>"; };
 		9DB6351D0E4DD9BE00C72888 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Sources/App/main.m; sourceTree = "<group>"; };
 		9DB6353A0E4DDCB700C72888 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppController.m; path = Sources/App/AppController.m; sourceTree = SOURCE_ROOT; };
 		9DB6353B0E4DDCB700C72888 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppController.h; path = Sources/App/AppController.h; sourceTree = SOURCE_ROOT; };
@@ -135,6 +136,7 @@
 		FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+Additions.m"; path = "Sources/Main/NSMutableDictionary+Additions.m"; sourceTree = "<group>"; };
 		FC77C02713534913008BF910 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Resources/Japanese.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 		FC77C02813534920008BF910 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Resources/Dutch.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
+		FC8E8EB0157CAA5B00B533B3 /* Norwegian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Norwegian; path = Resources/Norwegian.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 		FC8FA90D14BB4CBD00AF572D /* Czech */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Czech; path = Resources/Czech.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -408,6 +410,7 @@
 				Spanish,
 				Dutch,
 				Czech,
+				Norwegian,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* FeedbackReporter */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -428,6 +431,7 @@
 			files = (
 				9DD4D9C30E4B934500B26451 /* FeedbackReporter.strings in Resources */,
 				9DB634F70E4DD8C200C72888 /* FeedbackReporter.xib in Resources */,
+				FC8E8EB1157CAA5B00B533B3 /* App.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,6 +537,7 @@
 				FC77C02713534913008BF910 /* Japanese */,
 				FC77C02813534920008BF910 /* Dutch */,
 				FC8FA90D14BB4CBD00AF572D /* Czech */,
+				FC8E8EB0157CAA5B00B533B3 /* Norwegian */,
 			);
 			name = FeedbackReporter.strings;
 			sourceTree = "<group>";
