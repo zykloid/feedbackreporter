@@ -45,6 +45,7 @@
 		FC045BC0148B9D240092512E /* FRConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D5FB36B0E0B269900CF1BE0 /* FRConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC369CBB1100D505004C27F8 /* NSMutableDictionary+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC369CB91100D505004C27F8 /* NSMutableDictionary+Additions.h */; };
 		FC369CBC1100D505004C27F8 /* NSMutableDictionary+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */; };
+		FC7E1C9215B7F41E000AFF1E /* App.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB6351B0E4DD97A00C72888 /* App.xib */; };
 		FC8E8EB1157CAA5B00B533B3 /* App.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB6351B0E4DD97A00C72888 /* App.xib */; };
 /* End PBXBuildFile section */
 
@@ -136,6 +137,7 @@
 		FC369CBA1100D505004C27F8 /* NSMutableDictionary+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableDictionary+Additions.m"; path = "Sources/Main/NSMutableDictionary+Additions.m"; sourceTree = "<group>"; };
 		FC77C02713534913008BF910 /* Japanese */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Japanese; path = Resources/Japanese.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 		FC77C02813534920008BF910 /* Dutch */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Dutch; path = Resources/Dutch.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
+		FC7E1C9115B7F41E000AFF1E /* pt_BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt_BR; path = Resources/pt_BR.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 		FC8E8EB0157CAA5B00B533B3 /* Norwegian */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Norwegian; path = Resources/Norwegian.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 		FC8FA90D14BB4CBD00AF572D /* Czech */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Czech; path = Resources/Czech.lproj/FeedbackReporter.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -411,6 +413,7 @@
 				Dutch,
 				Czech,
 				Norwegian,
+				pt_BR,
 			);
 			mainGroup = 0867D691FE84028FC02AAC07 /* FeedbackReporter */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
@@ -432,6 +435,7 @@
 				9DD4D9C30E4B934500B26451 /* FeedbackReporter.strings in Resources */,
 				9DB634F70E4DD8C200C72888 /* FeedbackReporter.xib in Resources */,
 				FC8E8EB1157CAA5B00B533B3 /* App.xib in Resources */,
+				FC7E1C9215B7F41E000AFF1E /* App.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +542,7 @@
 				FC77C02813534920008BF910 /* Dutch */,
 				FC8FA90D14BB4CBD00AF572D /* Czech */,
 				FC8E8EB0157CAA5B00B533B3 /* Norwegian */,
+				FC7E1C9115B7F41E000AFF1E /* pt_BR */,
 			);
 			name = FeedbackReporter.strings;
 			sourceTree = "<group>";
