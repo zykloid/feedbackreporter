@@ -1,5 +1,5 @@
 /*
- * Copyright 2008-2010, Torsten Curdt
+ * Copyright 2008-2013, Torsten Curdt
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -39,9 +39,14 @@
     NSDateFormatter *dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
     [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
     [dateFormatter setTimeStyle:NSDateFormatterMediumStyle];
-
-    aslmsg query = asl_new(ASL_TYPE_QUERY);
-
+	
+	// ASL does not work in App Sandbox, even read-only. <rdar://problem/9689364>
+	// Workaround is to use:
+	//   com.apple.security.temporary-exception.files.absolute-path.read-only
+	// for:
+	//   /private/var/log/asl/
+	aslmsg query = asl_new(ASL_TYPE_QUERY);
+	
     if (query != NULL) {
 
         NSString *applicationName = [FRApplication applicationName];
@@ -82,7 +87,7 @@
                 consoleLinesProcessed++;
                 if (consoleLinesProcessed > rawConsoleLinesCapacity) {
                     rawConsoleLinesCapacity *= 2;
-                    rawConsoleLines = realloc(rawConsoleLines, rawConsoleLinesCapacity * sizeof(char **));
+                    rawConsoleLines = reallocf(rawConsoleLines, rawConsoleLinesCapacity * sizeof(char **));
                 }
 
                 // Add a new entry for this console line
@@ -106,7 +111,9 @@
                 for (NSInteger i = consoleLinesProcessed - 1; i >= 0; i--) {
                     char **line = rawConsoleLines[i];
                     NSDate *date = [NSDate dateWithTimeIntervalSince1970:atof(line[FR_CONSOLELOG_TIME])];
-                    [consoleLines addObject:[NSString stringWithFormat:@"%@: %s\n", [dateFormatter stringFromDate:date], line[FR_CONSOLELOG_TEXT]]];
+					NSString *lineString = [NSString stringWithUTF8String:line[FR_CONSOLELOG_TEXT]];
+					NSString *fullString = [NSString stringWithFormat:@"%@: %@\n", [dateFormatter stringFromDate:date], lineString];
+                    [consoleLines addObject:fullString];
 
                     // If a maximum size has been provided, respect it and abort if necessary
                     if (maximumSize != nil) {
