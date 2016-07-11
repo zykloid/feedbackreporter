@@ -130,9 +130,9 @@
                 return @"PowerPC G4";
             case CPUFAMILY_POWERPC_G5:
                 return @"PowerPC G5";
-            case CPUFAMILY_INTEL_CORE:
+            case CPUFAMILY_INTEL_YONAH:
                 return @"Intel Core Duo";
-            case CPUFAMILY_INTEL_CORE2:
+            case CPUFAMILY_INTEL_MEROM:
                 return @"Intel Core 2 Duo";
             case CPUFAMILY_INTEL_PENRYN:
                 return @"Intel Core 2 Duo (Penryn)";
